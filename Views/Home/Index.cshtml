@@ -1,0 +1,39 @@
+﻿@model List<Kitap>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Kitap Listesi</h1>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#Id</th>
+                <th scope="col">Kitap Adı</th>
+                <th scope="col">Fiyat</th>
+                <th scope="col">İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Kitap kitap in Model)
+            {
+                <tr>
+                    <th scope="row">@kitap.Id</th>
+                    <td>@kitap.KitapAd</td>
+                    <td>@kitap.Fiyat</td>
+                    <td>
+                        <a class="btn btn-primary" 
+                        asp-controller="Home"
+                        asp-action="KitapDetay"
+                        asp-route-id=@kitap.Id
+                        >Düzenle</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
