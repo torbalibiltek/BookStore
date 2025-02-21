@@ -43,5 +43,11 @@ namespace BookStore.Controllers
             return View(kitap);
         }
 
+        [HttpGet]
+        public IActionResult YeniKitap()
+        {
+            return View();
+        }
+
     }
 }
