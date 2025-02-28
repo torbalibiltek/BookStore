@@ -4,7 +4,7 @@
 
 namespace BookStore.Migrations
 {
-    public partial class ilk : Migration
+    public partial class ilk_kurulum : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

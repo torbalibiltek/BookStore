@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Migrations
 {
     [DbContext(typeof(KitapContext))]
-    [Migration("20250221082627_ilk")]
-    partial class ilk
+    [Migration("20250228055730_ilk_kurulum")]
+    partial class ilk_kurulum
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

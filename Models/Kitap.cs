@@ -5,7 +5,7 @@
         public int Id { get; set; }//PK
         public string KitapAd { get; set; }
         public double Fiyat { get; set; }
-        public int KategoriId { get; set; }//FK
+        public int? KategoriId { get; set; }//FK
         //Navigation Property
         public Kategori Kategori { get; set; }
 
